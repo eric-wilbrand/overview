@@ -11,39 +11,57 @@
     <title>About Eric Wilbrand</title>
   </head>
   <style>
-  img {
+  .avatar {
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-    margin-top: 0;
-    margin-bottom:15px;
+    margin-top: 15px;
+    margin-bottom:5px;
 }  
+.banner {
+  text-align: center;
+}  
+.image_note {
+  text-align: center;
+  font-size: 10px;
+  color: "text-secondary"
+}
+.overview_text {
+  text-align: center;
+  color: "text-secondary"
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 30px
+}
+
+
   </style>
   <body>
     <!--The container starts below-->
 <div class="container">
-<main role="main">
-      <section class="jumbotron text-center" style="background:transparent">
-        <div class="container">
-          <img src="https://360view.hum3d.com/zoom/Tools/Baymax_1000_0001.jpg" alt="baymax" style="width:150px;height:150px;">
-       
-          <h1 class="jumbotron-heading">A bit about me...</h1>
-          <p class="lead text-muted">Welcome to my website. Here you can learn about my personal achievements and passions.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Contact</a>
-            <a href="#" class="btn btn-secondary my-2">Resume</a>
-          </p>
-          <p>
-            Real close
-          </p>
-        </div>
-      </section>
-      <section>
-        Hello!!!
-      </section>
-      </main>
-      </div>
+  <img class="avatar" src="https://360view.hum3d.com/zoom/Tools/Baymax_1000_0001.jpg" alt="baymax" style="width:150px;height:150px;">
+  <p class="image_note text-secondary">
+  Eric Wilbrand
+  </p>
+  <h2 class="banner">
+  A bit about me...
+  </h2>
+  <p class="text-secondary overview_text">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Nisi est sit amet facilisis magna etiam tempor. Id venenatis a condimentum vitae sapien pellentesque.
+  </p>
+  
+  <div class="buttons">
+  <span>
+  <button type="button" class="btn btn-primary press">Contact</button>
+  <button type="button" class="btn btn-secondary press">Resume</button>
+  </span>
+  </div>
+   </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -52,5 +70,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
 
 
