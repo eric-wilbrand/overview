@@ -11,6 +11,29 @@
 	<title>About Eric Wilbrand</title>
 </head>
 <script src="https://kit.fontawesome.com/e5092f43e6.js" crossorigin="anonymous"></script>
+
+<!--disable for now
+<script>
+document.getElementById("contact-form").addEventListener('Send', function(evt){
+    evt.preventDefault();
+    
+    
+    window.open("http://www.google.com", "_top")
+})
+
+</script>
+
+-->
+
+
+<script>
+function myFunction() {
+    document.getElementById("contact-form").reset();
+}
+</script>
+
+
+
 <style>
 .avatar {
 	border-radius: 50%;
@@ -77,6 +100,22 @@ h4 {
 .hobbies{
  margin-top: 35px;
 }
+textarea {
+    resize: none;
+}
+
+#count_message {
+  background-color: smoke;
+  margin-top: -20px;
+  margin-right: 5px;
+}
+input{
+  margin-bottom: 16px;
+}
+.sent{
+  background-color: green;
+}
+
 </style>
 
 <body>
@@ -368,58 +407,70 @@ h4 {
     <!--start contact me section--><span>
         <h4>
           <span style="color: black;">
-            <i class="fas fa-building"></i>
-            </span>Contact </h4>
+<i class="far fa-envelope"></i>            </span>Contact </h4>
             
-            <div style="background: silver">
+            <div>
             
            
-            <h5>
+            <h5 style="margin-bottom: 20px;">
             Let's get in touch...
             
             
             </h5>
-            
-            
- 
-            
-            
-            <form>
-  <div class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/formResponse">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="text" name="entry.2005620554"class="form-control" id="exampleInputName" placeholder="Enter name">
-    
-     <label for="exampleInputEmail1">Email</label>
-    <input type="email" name="entry.1045781291" class="form-control" id="exampleInputEmail" placeholder="Enter email">
- 
-      <label for="exampleInputEmail1">Phone Number</label>
-    <input type="text" name="entry.1166974658" class="form-control" id="exampleInputName" placeholder="Enter phone number">
-    
-        <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" name="entry.839337160" id="exampleFormControlTextarea1" rows="3"></textarea>
- 
- 
- 
- </div>
-  <button type="submit" class="btn btn-primary" value="send">Submit</button>
-  
-            <input type="submit" value="Send" />
 
+
+<script type="text/javascript">var submitted=false;
+
+</script>
+<!-- disable for now...
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+onload="if(submitted) {window.location.href';}"></iframe> -->
+      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/formResponse" method="post" target="hidden_iframe" 
+onsubmit="submitted=true;"name='contact-form' id="contact-form">
+
+
+
+
+          <label>Name</label>
+          <input name="entry.2005620554" type="text"required class="form-control" placeholder="Enter name"/>
+
+          <label>Email</label>
+          <input name="entry.1045781291" type="email" required class="form-control" placeholder="Enter email"/>
+
+
+  <label>Phone</label>
+          <input name="entry.1166974658" type="text" class="form-control" placeholder="Enter phone"/>
+
+        
+          
+       <label>Message</label>
+           <textarea name="entry.839337160" class="form-control " required id="exampleFormControlTextarea1" rows="10" maxlength="10000" style="margin-bottom: 24px"></textarea>
+
+  <a>    
+<button id="submit-message" type="button submit" value="Send" type="Send" class="btn btn-dark submit-message"onclick="setTimeout(myFunction, 500);">Send</button>
+</a> 
 </form>
-  </div>
-		<!--end contact me section-->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     
     
 		<!-- Modal -->
