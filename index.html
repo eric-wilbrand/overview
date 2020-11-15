@@ -11,7 +11,6 @@
 	<title>About Eric Wilbrand</title>
 </head>
 <script src="https://kit.fontawesome.com/e5092f43e6.js" crossorigin="anonymous"></script>
-
 <!--disable for now
 <script>
 document.getElementById("contact-form").addEventListener('Send', function(evt){
@@ -24,17 +23,16 @@ document.getElementById("contact-form").addEventListener('Send', function(evt){
 </script>
 
 -->
-
-
 <script>
 function myFunction() {
-    document.getElementById("contact-form").reset();
+	document.getElementById("contact-form").reset();
 }
 </script>
-
-
-
 <style>
+body {
+	min-width: 500px
+}
+
 .avatar {
 	border-radius: 50%;
 	display: block;
@@ -73,7 +71,7 @@ h4 {
 
 .container {
 	margin-top: 40px;
-	margin-bottom: 200px;
+	margin-bottom: 0px;
 }
 
 .icon {
@@ -91,43 +89,50 @@ h4 {
 .icon-2 {
 	margin: 0 auto;
 	color: gray;
-  padding-bottom: 10px
+	padding-bottom: 10px
 }
 
 .checked {
 	color: orange;
 }
-.hobbies{
- margin-top: 35px;
+
+.hobbies {
+	margin-top: 35px;
 }
+
 textarea {
-    resize: none;
+	resize: none;
 }
 
 #count_message {
-  background-color: smoke;
-  margin-top: -20px;
-  margin-right: 5px;
-}
-input{
-  margin-bottom: 16px;
-}
-.sent{
-  background-color: green;
+	background-color: smoke;
+	margin-top: -20px;
+	margin-right: 5px;
 }
 
+input {
+	margin-bottom: 16px;
+	max-width: 400px;
+}
+
+.sent {
+	background-color: green;
+}
+
+.contact-form-base {
+	max-width: 600px;
+}
 </style>
 
 <body>
 	<!-- nav bar-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/ericwilbrand/">LinkedIn</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#contact-scroll">Contact</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/ericwilbrand/" target="_blank">LinkedIn</a> </li>
 			</ul>
 		</div>
 	</nav>
@@ -138,10 +143,13 @@ input{
 			<h2 class="banner">
           A bit about me
         </h2>
-			<p class="text-secondary overview_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Nisi est sit amet facilisis magna etiam tempor. Id venenatis a condimentum vitae sapien pellentesque. </p>
+			<p class="text-secondary overview_text">Welcome to my webpage! I was born and raised the San Francisco Bay Area. In 2018 I earned a Bachelor of Science in Health Sciences. I then began working in the molecular diagnostics industry starting with Counsyl. My expertise include Customer Experience, specifically in Biotechnology. Please scroll below to learn more about by professional experience, skills, and hobbies.</p>
 			<div class="button-box"> <span>
-            <button type="button" class="btn btn-primary press">Contact</button>
-            <button type="button" class="btn btn-secondary press">Resume</button>
+
+            <a href="#contact-scroll">
+           <button class="btn btn-primary press">Contact</button>
+            </a>
+           
           </span> </div>
 		</div>
 		<!--start education sectionn--><span>
@@ -285,7 +293,6 @@ input{
 						<div class="star-rating"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> </div>
 					</td>
 				</tr>
-        
 				<!--end-->
 				<!--start-->
 				<tr>
@@ -344,174 +351,137 @@ input{
 					<!--end-->
 			</tbody>
 		</table>
-   
- <!-- end proficiency section-->
- <!--start hobby sectionn--><span>
+		<!-- end proficiency section-->
+		<!--start hobby sectionn--><span>
       <h4 class="hobbies">
         <span style="color: black;">
         <i class="far fa-smile"></i>
         </span>Hobbies and Likes</h4>
 		<!--start cards-->
 		<div class="row">
-    <!--start card-->
+			<!--start card-->
 			<div class="col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Vintage Road Bikes</h5>
-            <div class="icon-2">
-            <i class="fas fa-bicycle fa-4x"></i>
-            </div>
+						<div class="icon-2"> <i class="fas fa-bicycle fa-4x"></i> </div>
 						<p class="card-text">I love restoring vintage track bikes and converting them into lightweight single speed bikes. The more patina the better!</p>
 					</div>
 				</div>
 			</div>
-      <!--end card-->
-   
-        <!--start card-->
+			<!--end card-->
+			<!--start card-->
 			<div class="col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Lofi-Hip-Hop</h5>
-            <div class="icon-2">
-            <i class="fas fa-music fa-4x"></i>
-           
-            </div>
-                    <p>
-                    Easily the best focusing tool: <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank"><i>lofi hip hop radio - beats to relax/study to</i>
-</a>– YouTube.
-                    </p>
-          
+						<div class="icon-2"> <i class="fas fa-music fa-4x"></i> </div>
+						<p> Easily the best focusing tool: <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank"><i>lofi hip hop radio - beats to relax/study to</i>
+</a>– YouTube.</p>
 					</div>
 				</div>
 			</div>
-      <!--end card-->
-        <!--start card-->
+			<!--end card-->
+			<!--start card-->
 			<div class="col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Ramen, Shabu, and Pizza</h5>
-            <div class="icon-2">
-            <i class="fas fa-utensils fa-4x"></i>
-            </div>
-            <p class="card-text">My favorite ramen is located on the Peninsula at <a href="https://www.yelp.com/biz/ramen-nagi-palo-alto" target="_blank">Ramen Nagi</a>. Spice aficionados should try a bowl of Red King. On colder nights I like venturing to the Richmond District to join friends around a table of hot pot at <a href="https://www.yelp.com/biz/shabu-club-san-francisco?osq=shabu+club" target="_blank">Shabu Club</a>. Inarguably the best pizza in the Bay Area is at <a href="https://www.yelp.com/biz/golden-boy-pizza-san-francisco" target="_blank">Golden Boy Pizza</a> located in North Beach.
-          </p>
+						<div class="icon-2"> <i class="fas fa-utensils fa-4x"></i> </div>
+						<p class="card-text">My favorite ramen is located on the Peninsula at <a href="https://www.yelp.com/biz/ramen-nagi-palo-alto" target="_blank">Ramen Nagi</a>. Spice aficionados should try a bowl of Red King. On colder nights I like venturing to the Richmond District to join friends around a table of hot pot at <a href="https://www.yelp.com/biz/shabu-club-san-francisco?osq=shabu+club" target="_blank">Shabu Club</a>. Inarguably the best pizza in the Bay Area is at <a href="https://www.yelp.com/biz/golden-boy-pizza-san-francisco" target="_blank">Golden Boy Pizza</a> located in North Beach. </p>
 					</div>
 				</div>
 			</div>
-      <!--end card-->
-      
-			
+			<!--end card-->
+			<!--start card-->
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Web Design</h5>
+						<div class="icon-2"> <i class="fas fa-code fa-4x"></i> </div>
+						<p class="card-text">I built this webpage myself with the help of Bootstrap 4, Font Awesome, and Google Forms. </p>
+					</div>
+				</div>
+			</div>
+			<!--end card-->
 		</div>
 		<!--end hobby sectionn-->
-    
-    <!--start contact me section--><span>
+		<!--start contact me section--><span id="contact-scroll">
         <h4>
           <span style="color: black;">
-<i class="far fa-envelope"></i>            </span>Contact </h4>
-            
-            <div>
-            
-           
-            <h5 style="margin-bottom: 20px;">
+<i class="far fa-envelope"></i></span>Contact </h4>
+		<div>
+			<h5 style="margin-bottom: 20px;">
             Let's get in touch...
             
             
             </h5>
-
-
-<script type="text/javascript">var submitted=false;
-
-</script>
-<!-- disable for now...
+			<script type="text/javascript">
+			var submitted = false;
+			</script>
+			<!-- disable for now...
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
 onload="if(submitted) {window.location.href';}"></iframe> -->
-      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/formResponse" method="post" target="hidden_iframe" 
-onsubmit="submitted=true;"name='contact-form' id="contact-form">
-
-
-
-
-          <label>Name</label>
-          <input name="entry.2005620554" type="text"required class="form-control" placeholder="Enter name"/>
-
-          <label>Email</label>
-          <input name="entry.1045781291" type="email" required class="form-control" placeholder="Enter email"/>
-
-
-  <label>Phone</label>
-          <input name="entry.1166974658" type="text" class="form-control" placeholder="Enter phone"/>
-
-        
-          
-       <label>Message</label>
-           <textarea name="entry.839337160" class="form-control " required id="exampleFormControlTextarea1" rows="10" maxlength="10000" style="margin-bottom: 24px"></textarea>
-
-  <a>    
-<button id="submit-message" type="button submit" value="Send" type="Send" class="btn btn-dark submit-message"onclick="setTimeout(myFunction, 500);">Send</button>
-</a> 
-</form>
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-    
-    
-		<!-- Modal -->
-<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Client Services Associate Manager
+			<div class="contact-form-base">
+				<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name='contact-form' id="contact-form">
+					<label>Name*</label>
+					<input name="entry.2005620554" type="text" required class="form-control" placeholder="Enter name" />
+					<label>Email*</label>
+					<input name="entry.1045781291" type="email" required class="form-control" placeholder="Enter email" />
+					<label>Phone</label>
+					<input name="entry.1166974658" type="text" class="form-control" placeholder="Enter phone" />
+					<label>Message*</label>
+					<textarea name="entry.839337160" class="form-control " required id="exampleFormControlTextarea1" rows="10" maxlength="10000" style="margin-bottom: 18px"></textarea>
+					<p> *Required </p>
+					<a>
+						<button id="submit-message" type="button submit" value="Send" type="Send" class="btn btn-dark submit-message" onclick="setTimeout(myFunction, 500);">Send</button>
+					</a>
+				</form>
+			</div>
+			<br> </div>
+	</div>
+	<!--ends container-->
+	<!-- Footer -->
+	<footer style="background-color: #343b3f; margin-top:120px">
+		<p style="text-align: center; padding-top:15px;color:#999d9f;"> © 2020 Copyright </p>
+		<p style="text-align: center;color:#999d9f; font-size:8px; padding-bottom:20px; padding-top:-20px"> Designed by Eric Wilbrand </p>
+	</footer>
+	<!-- Footer -->
+	<!-- Modal -->
+	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Client Services Associate Manager
 
 </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <h6>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+				</div>
+				<div class="modal-body">
+					<h6>
       Myriad Genetics
       </h6>
-<ul>
-<li>	Developed a team of Client Services Associates to provide an unsurpassed patient and provider experience, meet daily productivity goals, and quarterly SLAs</li>
-<li>	Designed and launched a customer satisfaction (CSAT) survey sent after every client interaction utilizing automation though Salesforce and GetFeedback, including a service recovery plan for all negative responses</li>
-<li>	Partner with Bioinformatics and Legal to compile and deliver raw genetic data requests</li>
-<li>	Built custom Looker dashboards with automatic email notifications to track call queue metrics, case volume, and associate performance</li>
-<li>	Collaborated with Marketing and Engineering to refresh over 100 FAQs</li>
-<li>	Provide the International Sales Team with operational knowledge and logistical support, ensuring genetic insight is accessible globally</li>
-</ul>
-
-</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
-      </div>
-    </div>
-  </div>
-</div>
-		<!--end modal 1-->
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+					<ul>
+						<li> Developed a team of Client Services Associates to provide an unsurpassed patient and provider experience, meet daily productivity goals, and quarterly SLAs</li>
+						<li> Designed and launched a customer satisfaction (CSAT) survey sent after every client interaction utilizing automation though Salesforce and GetFeedback, including a service recovery plan for all negative responses</li>
+						<li> Partner with Bioinformatics and Legal to compile and deliver raw genetic data requests</li>
+						<li> Built custom Looker dashboards with automatic email notifications to track call queue metrics, case volume, and associate performance</li>
+						<li> Collaborated with Marketing and Engineering to refresh over 100 FAQs</li>
+						<li> Provide the International Sales Team with operational knowledge and logistical support, ensuring genetic insight is accessible globally</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end modal 1-->
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
