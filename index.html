@@ -2,7 +2,18 @@
 <html lang="en">
 
 <head>
-	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYN5ZERKN2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-BYN5ZERKN2');
+	</script>
+	<!--prevent redirect-->
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -102,7 +113,11 @@ textarea {
 
 input {
 	margin-bottom: 16px;
-	max-width: 400px;
+
+}
+.form-control{
+  width:400px;
+  padding-right:60px
 }
 
 .sent {
@@ -128,7 +143,7 @@ input {
 
 <body>
 	<!-- nav bar-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav style="background-color: white" class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -433,7 +448,7 @@ input {
 			<br>
 			<label>
 				<p class="input-header"> Message<a style="color:red">*</a> </p>
-				<textarea style="width:350px; height: 150px" class="form-control" type="text" name="Message" placeholder="Enter message" required></textarea>
+				<textarea style="width:400px; height: 200px" class="form-control" type="text" name="Message" placeholder="Enter message" required></textarea>
 			</label>
 			<div style="margin-top:-20px;font-size:12px">
 				<br> <a style="color:red">*</a><a>Required</a>
@@ -442,10 +457,12 @@ input {
 			</div>
 		</form>
 	</div>
+  
 	<!--ends container-->
+
 	<!-- Footer -->
-	<footer style="background-color: #f8f9fa; margin-top:120px">
-		<p style="text-align: center; padding-top:15px;color:#999d9f;">Copyright © 2020 | Made by Eric Wilbrand</p>
+	<footer style="background-color: white; height:100px;margin-top:200px">
+		<p style="text-align: center; padding-top:22px;color:#999d9f;">Copyright © 2020 | Made by Eric Wilbrand</p>
 	</footer>
 	<!-- Footer -->
 	<!-- Modal -->
