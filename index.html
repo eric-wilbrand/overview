@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYN5ZERKN2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYN5ZERKN2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-BYN5ZERKN2');
-</script>
-
-
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-BYN5ZERKN2');
+	</script>
+	<!--prevent redirect-->
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,26 +21,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Meet Eric Wilbrand</title>
-
-
-
-
-
-
 </head>
 <script src="https://kit.fontawesome.com/e5092f43e6.js" crossorigin="anonymous"></script>
-<!--disable for now
-<script>
-document.getElementById("contact-form").addEventListener('Send', function(evt){
-    evt.preventDefault();
-    
-    
-    window.open("http://www.google.com", "_top")
-})
-
-</script>
-
--->
 <script>
 function myFunction() {
 	document.getElementById("contact-form").reset();
@@ -48,7 +31,7 @@ function myFunction() {
 <style>
 body {
 	min-width: 300px;
-  background: #f6f6f6;
+	background: #f6f6f6;
 }
 
 .avatar {
@@ -140,11 +123,17 @@ input {
 .contact-form-base {
 	max-width: 600px;
 }
-.star-rating{
-  min-width:120px;
+
+.star-rating {
+	min-width: 120px;
 }
-.table{
-  background:white;
+
+.table {
+	background: white;
+}
+
+.input-header {
+	margin-bottom: 5px
 }
 </style>
 
@@ -430,47 +419,44 @@ input {
 			<!--end card-->
 		</div>
 		<!--end hobby sectionn-->
-    
-    <hr id="contact-scroll" style="padding-bottom:20px">
+		<hr id="contact-scroll" style="padding-bottom:20px">
 		<!--start contact me section--><span>
-       
-            
-            
-            <!--
-			<script type="text/javascript">
-			var submitted = false;
-			</script>
-			<!-- disable for now...
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-onload="if(submitted) {window.location.href';}"></iframe> 
-			<div class="contact-form-base">
-				<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name='contact-form' id="contact-form">
-					<label>Name*</label>
-					<input name="entry.2005620554" type="text" required class="form-control" placeholder="Enter name" />
-					<label>Email*</label>
-					<input name="entry.1045781291" type="email" required class="form-control" placeholder="Enter email" />
-					<label>Phone</label>
-					<input name="entry.1166974658" type="text" class="form-control" placeholder="Enter phone" />
-					<label>Message*</label>
-					<textarea name="entry.839337160" class="form-control " required id="exampleFormControlTextarea1" rows="10" maxlength="10000" style="margin-bottom: 18px"></textarea>
-					<p> *Required </p>
-					<a>
-						<button id="submit-message" type="button submit" value="Send" type="Send" class="btn btn-dark submit-message" onclick="setTimeout(myFunction, 500);">Send</button>
-					</a>
-				</form>
+    
+    <span>
+        <h4>
+          <span style="color: black;">
+          <i class="far fa-envelope"></i>
+          </span>Contact</h4>
+		<form action="https://formspree.io/f/xoqplgvz" method="POST">
+			<input type="hidden" name="_next" value="https://www.google.com" />
+			<label>
+				<p class="input-header"> Name<a style="color:red">*</a> </p>
+				<input class="form-control" type="text" name="Name" placeholder="Enter name" required> </label>
+			<br>
+			<label>
+				<p class="input-header"> Email<a style="color:red">*</a> </p>
+				<input class="form-control" type="email" name="Email" placeholder="Enter email" required> </label>
+			<!-- your other form fields go here -->
+			<br>
+			<label>
+				<p class="input-header"> Phone </p>
+				<input class="form-control" type="text" name="Phone" placeholder="Enter phone"> </label>
+			<br>
+			<label>
+				<p class="input-header"> Message<a style="color:red">*</a> </p>
+				<textarea style="width:350px; height: 150px" class="form-control" type="text" name="Message" placeholder="Enter message" required></textarea>
+			</label>
+			<div style="margin-top:-20px;font-size:12px">
+				<br> <a style="color:red">*</a><a>Required</a>
+				<br>
+				<button onclick="window.location.href='/meet'" style="margin-top:50px" class="btn btn-dark" type="submit">Send</button>
 			</div>
-			<br> </div>
-      -->
-      
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVh9AvQiX7ShLs4CjPEEkDBOKTnnbt61kTCY7OVWo6RG2kHg/viewform?embedded=true" width="100%" height="1050" frameborder="0" marginheight="0" margin="0 auto" style="margin-left: -0px">Loading…</iframe>
-      
-     
+		</form>
 	</div>
 	<!--ends container-->
 	<!-- Footer -->
 	<footer style="background-color: #343b3f; margin-top:120px">
-		<p style="text-align: center; padding-top:15px;color:#999d9f;">Copyright © 2020 </p>
-		<p style="text-align: center;color:#999d9f; font-size:8px; padding-bottom:20px; padding-top:-20px"> Designed by Eric Wilbrand </p>
+		<p style="text-align: center; padding-top:15px;color:#999d9f;">Copyright © 2020 | Made by Eric Wilbrand</p>
 	</footer>
 	<!-- Footer -->
 	<!-- Modal -->
@@ -511,4 +497,3 @@ onload="if(submitted) {window.location.href';}"></iframe>
 </body>
 
 </html>
-
